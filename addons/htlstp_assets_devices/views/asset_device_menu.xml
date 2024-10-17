@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="menu_asset_device" name="Devices" parent="mgf_assets.asset_asset_menu" action="asset_asset_device_action" sequence="15"/>
+    <menuitem id="menu_asset_device_type" name="Device Type" parent="mgf_assets.asset_asset_configuration" action="asset_device_type_action" sequence="5"/>
+</odoo>
