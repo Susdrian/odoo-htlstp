@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sb_sub_draft_invoices_view_form" model="ir.ui.view">
+        <field name="name">sb_sub_draft_invoices.form.inherit</field>
+        <field name="model">sale.temporal.recurrence</field>
+        <field name="inherit_id" ref="sale_temporal.sale_temporal_recurrence_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='duration']" position="after">
+                <field name='draft'/>
+                <field name="prepayment"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="sb_sub_draft_invoices_view_tree" model="ir.ui.view">
+        <field name="name">sb_sub_draft_invoices.tree.inherit</field>
+        <field name="model">sale.temporal.recurrence</field>
+        <field name="inherit_id" ref="sale_temporal.sale_temporal_recurrence_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='duration']" position="after">
+                <field name='draft'/>
+                <field name="prepayment"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
