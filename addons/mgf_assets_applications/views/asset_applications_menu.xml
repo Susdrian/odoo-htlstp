@@ -1,0 +1,3 @@
+<odoo>
+    <menuitem id="menu_asset_application" name="Applications" parent="mgf_assets.asset_menu_root" action="asset_application_action" sequence="10"/>
+</odoo>

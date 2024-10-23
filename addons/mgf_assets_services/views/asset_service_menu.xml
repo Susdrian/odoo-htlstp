@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="menu_asset_service" name="Services" parent="mgf_assets.asset_asset_menu" action="asset_asset_service_action" sequence="15"/>
+    <menuitem id="menu_asset_service_type" name="Service Type" parent="mgf_assets.asset_asset_configuration" action="asset_service_type_action" sequence="5"/>
+</odoo>

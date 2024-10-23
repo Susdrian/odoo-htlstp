@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mgf_assets_applications.access_asset_application,access_asset_application,mgf_assets_applications.model_asset_application,base.group_user,1,1,1,1
+mgf_assets_applications.access_asset_application_version,access_asset_application_version,mgf_assets_applications.model_asset_application_version,base.group_user,1,1,1,1
