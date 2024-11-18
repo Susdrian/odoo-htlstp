@@ -1,7 +1,7 @@
 {
     'name': 'Asset Management Services',
     'summary': """Asset Management Service Extension""",
-    'version': '16.0.1.0.3',
+    'version': '18.0.1.0.3',
     'category': 'Asset/Management',
     'license': 'OPL-1',
     'author': 'mgfranke.io',

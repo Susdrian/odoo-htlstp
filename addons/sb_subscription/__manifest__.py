@@ -1,7 +1,7 @@
 {
     'name': 'SB Subscription',
     'summary': """Subscription reenable Subscription to Draft & Set the Period for the whole Invoice""",
-    'version': '16.0.1.0.3',
+    'version': '18.0.1.0.3',
     'category': 'Sales',
     'license': 'OPL-1',
     'author': 'stpehanbartl GmbH',

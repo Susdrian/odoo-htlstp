@@ -1,7 +1,7 @@
 {
     'name': 'Asset Management Devices NinjaRMM',
     'summary': """Asset Management Device Ninja RMMExtension """,
-    'version': '16.0.1.0.3',
+    'version': '18.0.1.0.3',
     'category': 'Asset/Management',
     'license': 'OPL-1',
     'author': 'mgfranke.io',
