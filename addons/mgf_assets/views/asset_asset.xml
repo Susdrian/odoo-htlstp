@@ -18,7 +18,7 @@
                             <field name="owner_id"/>
                         </group>
                         <group>
-                            <field name="type"/>
+                            <field name="asset_type"/>
                         </group>
                     </group>
                     <group>
@@ -37,7 +37,7 @@
             <tree>
                 <field name="partner_id"/>
                 <field name="name"/>
-                <field name="type"/>
+                <field name="asset_type"/>
             </tree>
         </field>
     </record>
@@ -49,10 +49,10 @@
             <search>
                 <field name="name"/>
                 <field name="partner_id"/>
-                <field name="type"/>
-                <filter name="general" string="General" domain="[('type', '=', 'general')]"/>
+                <field name="asset_type"/>
+                <filter name="general" string="General" domain="[('asset_type', '=', 'general')]"/>
                 <group expand="1" string="Group By">
-                    <filter name="type" string="Digital Data" context="{'group_by':'type'}"/>
+                    <filter name="type" string="Digital Data" context="{'group_by':'asset_type'}"/>
                     <filter name="partner_id" string="Company" context="{'group_by':'partner_id'}"/>
                 </group>
             </search>
