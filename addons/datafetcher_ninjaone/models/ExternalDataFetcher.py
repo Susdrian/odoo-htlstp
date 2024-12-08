@@ -24,7 +24,7 @@ class ExternalDataFetcher(models.AbstractModel):
         # REPLACE URL
         url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
         header = self._get_header()
-        response = requests.get(url, header).headers()
+        response = requests.get(url, header)
         if response.status_code == 200:
             self.process_customer_data(response.json())
         else:
@@ -43,7 +43,7 @@ class ExternalDataFetcher(models.AbstractModel):
     def get_license_details_from_user(self, user_id):
         url = 'https://jsonplaceholder.typicode.com/posts/{}'.format(user_id)
         header = self._get_header()
-        response = requests.get(url, header).headers()
+        response = requests.get(url, header)
         if response.status_code == 200:
             self.process_license_data(response.json())
         else:
