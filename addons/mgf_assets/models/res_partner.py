@@ -7,7 +7,6 @@ class ResPartner(models.Model):
     asset_count = fields.Integer("Assets", compute='_compute_asset_count')
     owner_count = fields.Integer("Owner", compute='_compute_owner_count')
 
-
     def _compute_asset_count(self):
         for asset in self:
             asset.asset_count = self.env['asset.asset'].search_count([('partner_id', '=', self.id)])
