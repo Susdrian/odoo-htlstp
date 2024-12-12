@@ -1,0 +1,13 @@
+<odoo>
+    <data noupdate="1">
+        <record id="fetch_external_data_cron" model="ir.cron">
+            <field name="name">Fetch External Data</field>
+            <field name="model_id" ref="mgf_assets.model_external_data_fetcher"/>
+            <field name="state">code</field>
+            <field name="code">model.get_customer_data(1); model.get_license_details_from_user(1)</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="active">True</field>
+        </record>
+    </data>
+</odoo>

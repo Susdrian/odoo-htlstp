@@ -10,7 +10,8 @@ _logger = logging.getLogger(__name__)
 load_dotenv()
 
 class ExternalDataFetcher(models.AbstractModel):
-    _name = 'external.data.fetcher'
+    _name = 'x_external.data.fetcher'
+    _ids = "external_data_fetcher"
     _description = 'External Data Fetcher'
 
     def _get_header(self):
@@ -53,6 +54,7 @@ class ExternalDataFetcher(models.AbstractModel):
     def process_license_data(self, data):
         for license in data:
             self.env['asset.asset'].create({
+                'id': license.get('id'),
                 'license_product': license.get('name'),
                 'license_count': license.get('license_count'),
                 'license_duration': license.get('license_duration'),

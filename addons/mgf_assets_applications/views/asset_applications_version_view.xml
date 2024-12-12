@@ -14,11 +14,11 @@
         <field name="name">asset_application_version_tree</field>
         <field name="model">asset.application.version</field>
         <field name="arch" type="xml">
-            <tree string="Version">
+            <list string="Version">
                 <field name="publisher_id"  options="{'no_create': True, 'no_edit': True}"/>
                 <field name="application_id" options="{'no_create': True, 'no_edit': True}"/>
                 <field name="version" options="{'no_create': True, 'no_edit': True}"/>
-            </tree>
+            </list>
         </field>
     </record>
     <record id="asset_application_version_search_view" model="ir.ui.view">

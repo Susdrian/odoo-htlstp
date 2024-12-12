@@ -3,16 +3,16 @@
         <field name="name">asset_service_type_tree_view</field>
         <field name="model">asset.service.type</field>
         <field name="arch" type="xml">
-            <tree string="Type" editable="bottom">
+            <list string="Type" editable="bottom">
                 <field name="name"/>
                 <field name="application"/>
-            </tree>
+            </list>
         </field>
     </record>
     <record id="asset_service_type_action" model="ir.actions.act_window">
         <field name="name">Service Type</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">asset.service.type</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">list</field>
     </record>
 </odoo>
