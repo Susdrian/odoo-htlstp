@@ -79,7 +79,6 @@
         <field name="code">model.get_customer_data(1); model.get_license_details_from_user(1)</field>
         <field name="interval_number">1</field>
         <field name="interval_type">minutes</field>
-        <field name="numbercall">-1</field>
         <field name="active">True</field>
     </record>
 </odoo>
