@@ -32,11 +32,11 @@
         <field name="name">asset_asset_tree</field>
         <field name="model">asset.asset</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="partner_id"/>
                 <field name="name"/>
                 <field name="asset_type"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -72,13 +72,5 @@
         <field name="context">{'search_default_general': 1}</field>
     </record>
 
-    <record id="fetch_external_data_cron" model="ir.cron">
-        <field name="name">Fetch External Data</field>
-        <field name="model_id" ref="model_external_data_fetcher"/>
-        <field name="state">code</field>
-        <field name="code">model.get_customer_data(1); model.get_license_details_from_user(1)</field>
-        <field name="interval_number">1</field>
-        <field name="interval_type">minutes</field>
-        <field name="active">True</field>
-    </record>
+   
 </odoo>
